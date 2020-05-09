@@ -1,8 +1,17 @@
 {
   "name": "root",
   "private": true,
+  "author": {
+    "name": "rigwild",
+    "email": "me@rigwild.dev",
+    "url": "https://rigwild.dev"
+  },
+  "license": "WTFPL",
   "devDependencies": {
     "lerna": "^3.20.2"
   },
-  "workspaces": ["_templates/*", "challenges/*"]
+  "workspaces": [
+    "_templates/*",
+    "challenges/*"
+  ]
 }
