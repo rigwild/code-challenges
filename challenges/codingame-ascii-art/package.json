@@ -1,5 +1,5 @@
 {
-  "name": "codingame-chuck-norris-codesize",
+  "name": "codingame-ascii-art",
   "private": true,
   "version": "0.1.0",
   "author": {
@@ -8,7 +8,9 @@
     "url": "https://rigwild.dev"
   },
   "scripts": {
-    "start": "node index.js",
+    "start": "node dist/index.js",
+    "build": "tsc",
+    "dev": "tsc && node dist/index.js",
     "copy": "node _copy.js"
   },
   "dependencies": {
@@ -18,6 +20,7 @@
     "@types/node": "^13.13.5",
     "@types/readline-sync": "^1.4.3",
     "clipboardy": "^2.3.0",
-    "terser": "^4.6.13"
+    "ts-node": "^8.10.1",
+    "typescript": "^3.8.3"
   }
 }
