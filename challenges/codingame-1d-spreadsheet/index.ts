@@ -1,7 +1,6 @@
 import readlineSync from 'readline-sync'
 
 const readline = () => readlineSync.prompt({ encoding: 'utf-8', prompt: '' })
-const print = console.log.bind(console)
 
 // ------ Everything above this line will get cut when running copy script
 
