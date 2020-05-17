@@ -5,19 +5,6 @@ const print = console.log.bind(console)
 
 // ------ Everything above this line will get cut when running copy script
 
-// ------ UTILS
-
-// Log args and return them
-function _d(...args) {
-  console.error(...args)
-  return args
-}
-
-// Read input, log it and return it. `toString()` for SpiderMonkey compatibility.
-const _readline = () => _d(readline()).toString()
-
-// ------ SCRIPT
-
 const binaries = [...readline()].flatMap(x => [...'00'.concat(x.charCodeAt(0).toString(2)).slice(-7)])
 
 const encode = {
