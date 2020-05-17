@@ -9,7 +9,7 @@
       "commands": [
         {
           "match": "\\.ts$",
-          "cmd": "node ${fileDirname}/_copy.js --js",
+          "cmd": "node ${fileDirname}/_copy.js --js --dist",
           "useShortcut": false,
           "silent": false
         }
