@@ -1,0 +1,19 @@
+{
+  "folders": [
+    {
+      "path": ".."
+    }
+  ],
+  "settings": {
+    "saveAndRun": {
+      "commands": [
+        {
+          "match": "\\.ts$",
+          "cmd": "node ${fileDirname}/_copy.js --js",
+          "useShortcut": false,
+          "silent": false
+        }
+      ]
+    }
+  }
+}

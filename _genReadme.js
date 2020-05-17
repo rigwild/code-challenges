@@ -6,29 +6,15 @@ const readme = (challenges, challengesByPlatform, challengesByType) => `
 This is a collection of some of my submissions to code challenges/contests.
 
 ## TOC
- - [Grouped by platform](#grouped-by-platform)
-   - [CodinGame](#codingame)
  - [Grouped by type](#grouped-by-type)
    - [Classic](#classic)
    - [Code Golf](#code-golf)
    - [Contest](#contest)
+ - [Grouped by platform](#grouped-by-platform)
+   - [CodinGame](#codingame)
  - [All challenges](#all-challenges)
 
 ## Challenges
-
-### Grouped by platform
-${Object.entries(challengesByPlatform)
-  .map(
-    ([platform, challenges]) => `
-#### ${platform}
-
-| Name | Type |
-| ---- | ---- |
-${challenges.map(x => `| [\`${x.name}\`](./challenges/${x.raw}) | ${x.type} |`).join('\n')}`
-  )
-  .join('\n')}
-
-___
 
 ### Grouped by type
 ${Object.entries(challengesByType)
@@ -39,6 +25,20 @@ ${Object.entries(challengesByType)
 | Name | Platform |
 | ---- | -------- |
 ${challenges.map(x => `| [\`${x.name}\`](./challenges/${x.raw}) | ${x.platform} |`).join('\n')}`
+  )
+  .join('\n')}
+
+___
+
+### Grouped by platform
+${Object.entries(challengesByPlatform)
+  .map(
+    ([platform, challenges]) => `
+#### ${platform}
+
+| Name | Type |
+| ---- | ---- |
+${challenges.map(x => `| [\`${x.name}\`](./challenges/${x.raw}) | ${x.type} |`).join('\n')}`
   )
   .join('\n')}
 

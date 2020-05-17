@@ -2,38 +2,15 @@
 This is a collection of some of my submissions to code challenges/contests.
 
 ## TOC
- - [Grouped by platform](#grouped-by-platform)
-   - [CodinGame](#codingame)
  - [Grouped by type](#grouped-by-type)
    - [Classic](#classic)
    - [Code Golf](#code-golf)
    - [Contest](#contest)
+ - [Grouped by platform](#grouped-by-platform)
+   - [CodinGame](#codingame)
  - [All challenges](#all-challenges)
 
 ## Challenges
-
-### Grouped by platform
-
-#### codingame
-
-| Name | Type |
-| ---- | ---- |
-| [`1d-spreadsheet`](./challenges/codingame-1d-spreadsheet) | Classic |
-| [`ascii-art`](./challenges/codingame-ascii-art) | Classic |
-| [`chuck-norris-codesize`](./challenges/codingame-chuck-norris-codesize) | Code golf |
-| [`defibrillators`](./challenges/codingame-defibrillators) | Classic |
-| [`horse-racing-duals`](./challenges/codingame-horse-racing-duals) | Classic |
-| [`mars-lander-episode-1`](./challenges/codingame-mars-lander-episode-1) | Classic |
-| [`mime-type`](./challenges/codingame-mime-type) | Classic |
-| [`rectangle-partition`](./challenges/codingame-rectangle-partition) | Classic |
-| [`rock-paper-scissors-lizard-spock`](./challenges/codingame-rock-paper-scissors-lizard-spock) | Classic |
-| [`rock-paper-scissors-war`](./challenges/codingame-rock-paper-scissors-war) | Classic |
-| [`shadows-of-the-knight-episode-1`](./challenges/codingame-shadows-of-the-knight-episode-1) | Classic |
-| [`spring-challenge-2020`](./challenges/codingame-spring-challenge-2020) | Contest |
-| [`temperatures`](./challenges/codingame-temperatures) | Classic |
-| [`the-labyrinth`](./challenges/codingame-the-labyrinth) | Classic |
-
-___
 
 ### Grouped by type
 
@@ -65,6 +42,29 @@ ___
 | Name | Platform |
 | ---- | -------- |
 | [`spring-challenge-2020`](./challenges/codingame-spring-challenge-2020) | codingame |
+
+___
+
+### Grouped by platform
+
+#### codingame
+
+| Name | Type |
+| ---- | ---- |
+| [`1d-spreadsheet`](./challenges/codingame-1d-spreadsheet) | Classic |
+| [`ascii-art`](./challenges/codingame-ascii-art) | Classic |
+| [`chuck-norris-codesize`](./challenges/codingame-chuck-norris-codesize) | Code golf |
+| [`defibrillators`](./challenges/codingame-defibrillators) | Classic |
+| [`horse-racing-duals`](./challenges/codingame-horse-racing-duals) | Classic |
+| [`mars-lander-episode-1`](./challenges/codingame-mars-lander-episode-1) | Classic |
+| [`mime-type`](./challenges/codingame-mime-type) | Classic |
+| [`rectangle-partition`](./challenges/codingame-rectangle-partition) | Classic |
+| [`rock-paper-scissors-lizard-spock`](./challenges/codingame-rock-paper-scissors-lizard-spock) | Classic |
+| [`rock-paper-scissors-war`](./challenges/codingame-rock-paper-scissors-war) | Classic |
+| [`shadows-of-the-knight-episode-1`](./challenges/codingame-shadows-of-the-knight-episode-1) | Classic |
+| [`spring-challenge-2020`](./challenges/codingame-spring-challenge-2020) | Contest |
+| [`temperatures`](./challenges/codingame-temperatures) | Classic |
+| [`the-labyrinth`](./challenges/codingame-the-labyrinth) | Classic |
 
 ___
 
