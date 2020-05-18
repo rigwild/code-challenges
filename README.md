@@ -19,6 +19,7 @@ This is a collection of some of my submissions to code challenges/contests.
 | Name | Platform |
 | ---- | -------- |
 | [`1d-spreadsheet`](./challenges/codingame-1d-spreadsheet) | codingame |
+| [`aneo`](./challenges/codingame-aneo) | codingame |
 | [`ascii-art`](./challenges/codingame-ascii-art) | codingame |
 | [`defibrillators`](./challenges/codingame-defibrillators) | codingame |
 | [`horse-racing-duals`](./challenges/codingame-horse-racing-duals) | codingame |
@@ -30,6 +31,7 @@ This is a collection of some of my submissions to code challenges/contests.
 | [`shadows-of-the-knight-episode-1`](./challenges/codingame-shadows-of-the-knight-episode-1) | codingame |
 | [`temperatures`](./challenges/codingame-temperatures) | codingame |
 | [`the-labyrinth`](./challenges/codingame-the-labyrinth) | codingame |
+| [`there-is-no-spoon-episode-1`](./challenges/codingame-there-is-no-spoon-episode-1) | codingame |
 
 #### Code golf
 
@@ -52,6 +54,7 @@ ___
 | Name | Type |
 | ---- | ---- |
 | [`1d-spreadsheet`](./challenges/codingame-1d-spreadsheet) | Classic |
+| [`aneo`](./challenges/codingame-aneo) | Classic |
 | [`ascii-art`](./challenges/codingame-ascii-art) | Classic |
 | [`chuck-norris-codesize`](./challenges/codingame-chuck-norris-codesize) | Code golf |
 | [`defibrillators`](./challenges/codingame-defibrillators) | Classic |
@@ -65,6 +68,7 @@ ___
 | [`spring-challenge-2020`](./challenges/codingame-spring-challenge-2020) | Contest |
 | [`temperatures`](./challenges/codingame-temperatures) | Classic |
 | [`the-labyrinth`](./challenges/codingame-the-labyrinth) | Classic |
+| [`there-is-no-spoon-episode-1`](./challenges/codingame-there-is-no-spoon-episode-1) | Classic |
 
 ___
 
@@ -73,6 +77,7 @@ ___
 | Name | Platform | Type |
 | ---- | -------- | ---- |
 | [`1d-spreadsheet`](./challenges/codingame-1d-spreadsheet) | codingame | Classic |
+| [`aneo`](./challenges/codingame-aneo) | codingame | Classic |
 | [`ascii-art`](./challenges/codingame-ascii-art) | codingame | Classic |
 | [`chuck-norris-codesize`](./challenges/codingame-chuck-norris-codesize) | codingame | Code golf |
 | [`defibrillators`](./challenges/codingame-defibrillators) | codingame | Classic |
@@ -86,6 +91,7 @@ ___
 | [`spring-challenge-2020`](./challenges/codingame-spring-challenge-2020) | codingame | Contest |
 | [`temperatures`](./challenges/codingame-temperatures) | codingame | Classic |
 | [`the-labyrinth`](./challenges/codingame-the-labyrinth) | codingame | Classic |
+| [`there-is-no-spoon-episode-1`](./challenges/codingame-there-is-no-spoon-episode-1) | codingame | Classic |
 
 ## License
 
