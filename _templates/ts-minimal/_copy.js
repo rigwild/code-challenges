@@ -25,15 +25,27 @@ const run = async () => {
   // Remove top-level TypeScript return ignore
   script = script.replace(/\/\/ \@ts-ignore\n\s*return/g, 'return')
 
-  if (process.argv[2] === '--js') {
-    console.log('Compile TypeScript and copy output')
+  if (process.argv.find(x => x === '--js')) {
+    console.log('Compile TypeScript')
     script = typescript.transpileModule(script, require('./tsconfig.json')).outputText
+  }
+  if (process.argv.find(x => x === '--copy')) {
+    await clipboardy.write(script)
+    console.log('Copied script to clipboard.')
+  }
+  if (process.argv.find(x => x === '--dist')) {
+    // Output file (for CodinGame IDE sync)
+    if (
+      !(await fsp.access(r(__dirname, 'dist')).then(
+        () => true,
+        () => false
+      ))
+    )
+      await fsp.mkdir(r(__dirname, 'dist'))
+    await fsp.writeFile(r(__dirname, 'dist', 'index.js'), script)
   }
 
   console.log(`Script SHA256: ${sha256(script)}.`)
-
-  await clipboardy.write(script)
-  console.log('Copied script to clipboard.')
 }
 
 run()
