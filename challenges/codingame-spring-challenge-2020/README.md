@@ -2,4 +2,4 @@
 https://www.codingame.com/contests/spring-challenge-2020
 
 **Type:** Contest
-Rank: 1559/4955
+<br>**Rank:** 1559/4955
