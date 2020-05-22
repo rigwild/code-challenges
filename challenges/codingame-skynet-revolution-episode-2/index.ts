@@ -1,3 +1,14 @@
+import readlineSync from 'readline-sync'
+
+const readline = () => readlineSync.prompt({ encoding: 'utf-8', prompt: '' })
+
+// ------ Everything above this line will get cut when running copy script
+
+const rsInt = () =>
+  readline()
+    .split(' ')
+    .map(x => +x)
+
 // From https://github.com/trekhleb/javascript-algorithms/blob/ba2d8dc4a8e27659c1420fe52390cb7981df4a94/src/data-structures/priority-queue/PriorityQueue.js
 // https://gist.github.com/rigwild/dd3f9ce36f7398a4b0e54fde76a80181
 // prettier-ignore
@@ -9,8 +20,50 @@
 
 type Vertex = { id: number; links: number[]; isGateway: boolean }
 
-const dijkstra = (graph: Vertex[], source: number) => {
-  // https://github.com/trekhleb/javascript-algorithms/blob/master/src/algorithms/graph/dijkstra/dijkstra.js
+// N = The total number of nodes in the level, including the gateways
+// L = The number of links
+// E = The number of exit gateways
+const [n, l, e] = rsInt()
+
+const nodes: Vertex[] = Array.from({ length: n }, (_, i) => ({ id: i, links: [], isGateway: false }))
+
+for (let i = 0; i < l; i++) {
+  // N1 and N2 defines a link between these nodes
+  const [n1, n2] = rsInt()
+  nodes[n1].links.push(n2)
+  nodes[n2].links.push(n1)
+}
+
+const gateways = Array.from({ length: e }, () => +readline())
+gateways.forEach(x => (nodes[x].isGateway = true))
+
+// game loop
+while (true) {
+  // The index of the node on which the Skynet agent is positioned this turn
+  const si = +readline()
+  const virus = nodes[si]
+
+  // if (si === 17 && n >= 48) {
+  //   const a = nodes[22]
+  //   const b = nodes[0]
+  //   console.log(`${a.id} ${b.id}`)
+  //   a.links.splice(a.links.indexOf(b.id), 1)
+  //   b.links.splice(b.links.indexOf(a.id), 1)
+  //   continue
+  // }
+
+  console.error(si)
+  console.error(nodes)
+
+  // If the virus is next to a gateway, cut its link
+  const gatewayNextToVirus = nodes.filter(x => x.isGateway).find(x => x.links.includes(si))
+  if (gatewayNextToVirus) {
+    console.error('Next to virus:', gatewayNextToVirus.id)
+    virus.links.splice(virus.links.indexOf(gatewayNextToVirus.id), 1)
+    gatewayNextToVirus.links.splice(gatewayNextToVirus.links.indexOf(virus.id), 1)
+    console.log(`${virus.id} ${gatewayNextToVirus.id}`)
+    continue
+  }
 
   const distances: { [id: number]: number } = {}
   const visited: { [id: number]: boolean } = {}
@@ -18,41 +71,42 @@ const dijkstra = (graph: Vertex[], source: number) => {
 
   const queue = new PriorityQueue()
 
-  graph.forEach(v => {
+  nodes.forEach(v => {
     distances[v.id] = Infinity
     previous[v.id] = null
   })
 
-  distances[source] = 0
-  queue.add(source, 0)
+  distances[virus.id] = 0
+  visited[virus.id] = true
+  queue.add(virus.id, 0)
 
-  while (!queue.isEmpty()) {
-    const currentNode = queue.poll() as number
-
-    graph[currentNode].links
-      .filter(x => !visited[x])
-      .forEach(neighbor => {
-        const existingDistanceToNeighbor = distances[neighbor]
-        const distanceToNeighborFromCurrent = distances[currentNode] + 1
-
-        if (distanceToNeighborFromCurrent < existingDistanceToNeighbor) {
-          distances[neighbor] = distanceToNeighborFromCurrent
-
-          if (queue.hasValue(neighbor)) {
-            queue.changePriority(neighbor, distances[neighbor])
+  let found = false
+  while (!queue.isEmpty() && !found) {
+    const currentNode = queue.poll()
+    for (const neighbor of nodes[currentNode].links) {
+      const gatewaysLinksCount = nodes[neighbor].links.filter(x => nodes[x].isGateway).length
+      if (!visited[neighbor] && !nodes[neighbor].isGateway && gatewaysLinksCount >= 1) {
+        visited[neighbor] = true
+        if (gatewaysLinksCount == 2) {
+          const gateway = nodes[neighbor].links.filter(x => nodes[x].isGateway)[0]
+          if (gateway) {
+            nodes[gateway].links.splice(nodes[gateway].links.indexOf(nodes[neighbor].id), 1)
+            nodes[neighbor].links.splice(nodes[neighbor].links.indexOf(nodes[gateway].id), 1)
+            console.log(`${nodes[gateway].id} ${nodes[neighbor].id}`)
+            found = true
+            break
           }
-
-          previous[neighbor] = currentNode
-        }
-
-        if (!queue.hasValue(neighbor)) {
-          queue.add(neighbor, distances[neighbor])
-        }
-      })
-    visited[currentNode] = true
+        } else queue.add(neighbor)
+      }
+    }
   }
-  return {
-    distances,
-    previous
-  }
+  if (found) continue
+
+  const firstCuttable = nodes.find(x => x.isGateway && x.links.length >= 1) as Vertex
+  const a = firstCuttable
+  const b = nodes[firstCuttable.links[0]]
+  console.error('Nothing to cut, simply cut the first available', a.id, b.id)
+  console.log(`${a.id} ${b.id}`)
+  a.links.splice(a.links.indexOf(b.id), 1)
+  b.links.splice(b.links.indexOf(a.id), 1)
 }
