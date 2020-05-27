@@ -122,6 +122,19 @@ class Game {
     this.thorPos = pos;
   }
 
+  public int getGiantsCentroidPos() {
+    double centroidX = 0, centroidY = 0;
+
+    for (int aGiantPos : this.giantsPos) {
+      centroidX += Game.posToX(this.width, aGiantPos);
+      centroidY += Game.posToY(this.width, aGiantPos);
+    }
+    centroidX /= this.giantsPos.size();
+    centroidY /= this.giantsPos.size();
+
+    return Game.coordinatesToPos(this.width, (int) Math.round(centroidX), (int) Math.round(centroidY));
+  }
+
   public static int coordinatesToPos(int width, int x, int y) {
     return y * width + x;
   }
@@ -132,6 +145,11 @@ class Game {
 
   public static int posToY(int width, int pos) {
     return pos / width;
+  }
+
+  public static int manhattanDistance(int width, int aPos, int bPos) {
+    return Math.abs(Game.posToX(width, bPos) - Game.posToX(width, aPos))
+        + Math.abs(Game.posToY(width, bPos) - Game.posToY(width, aPos));
   }
 
   @Override
@@ -176,44 +194,55 @@ class Game {
     W, E, N, S, NW, NE, SW, SE, WAIT, STRIKE
   };
 
-  public static ArrayList<PossibleMove> getPossibleMoves(Game game, int pos) {
+  public ArrayList<PossibleMove> getPossibleMoves(int pos) {
     ArrayList<PossibleMove> neighbors = new ArrayList<>();
 
-    if (pos % game.width != 0) // left
-      neighbors.add(new PossibleMove(game.cells[pos - 1], Game.ACTION.W));
-    if ((pos + 1) % game.width != 0) // right
-      neighbors.add(new PossibleMove(game.cells[pos + 1], Game.ACTION.E));
-    if (pos - game.width >= 0) // top
-      neighbors.add(new PossibleMove(game.cells[pos - game.width], Game.ACTION.N));
-    if (pos + game.width < game.width * game.height) // bottom
-      neighbors.add(new PossibleMove(game.cells[pos + game.width], Game.ACTION.S));
+    if (pos % this.width != 0) // left
+      neighbors.add(new PossibleMove(this.cells[pos - 1], Game.ACTION.W));
+    if ((pos + 1) % this.width != 0) // right
+      neighbors.add(new PossibleMove(this.cells[pos + 1], Game.ACTION.E));
+    if (pos - this.width >= 0) // top
+      neighbors.add(new PossibleMove(this.cells[pos - this.width], Game.ACTION.N));
+    if (pos + this.width < this.width * this.height) // bottom
+      neighbors.add(new PossibleMove(this.cells[pos + this.width], Game.ACTION.S));
 
-    if (pos - game.width - 1 >= 0 && pos % game.width != 0) // top-left
-      neighbors.add(new PossibleMove(game.cells[pos - game.width - 1], Game.ACTION.NW));
-    if (pos - game.width + 1 >= 0 && (pos - game.width + 1) % game.width != 0) // top-right
-      neighbors.add(new PossibleMove(game.cells[pos - game.width + 1], Game.ACTION.NE));
-    if (pos + game.width - 1 < game.width * game.height && pos % game.width != 0) // bottom-left
-      neighbors.add(new PossibleMove(game.cells[pos + game.width - 1], Game.ACTION.SW));
-    if (pos + game.width + 1 < game.width * game.height && (pos + game.width + 1) % game.width != 0) // bottom-right
-      neighbors.add(new PossibleMove(game.cells[pos + game.width + 1], Game.ACTION.SE));
+    if (pos - this.width - 1 >= 0 && pos % this.width != 0) // top-left
+      neighbors.add(new PossibleMove(this.cells[pos - this.width - 1], Game.ACTION.NW));
+    if (pos - this.width + 1 >= 0 && (pos - this.width + 1) % this.width != 0) // top-right
+      neighbors.add(new PossibleMove(this.cells[pos - this.width + 1], Game.ACTION.NE));
+    if (pos + this.width - 1 < this.width * this.height && pos % this.width != 0) // bottom-left
+      neighbors.add(new PossibleMove(this.cells[pos + this.width - 1], Game.ACTION.SW));
+    if (pos + this.width + 1 < this.width * this.height && (pos + this.width + 1) % this.width != 0) // bottom-right
+      neighbors.add(new PossibleMove(this.cells[pos + this.width + 1], Game.ACTION.SE));
 
     return neighbors;
   }
 
-  public static MinimaxScore minimax(Game game, int depth, boolean isMaximizing, int alpha, int beta) {
+  public static MinimaxScore gameScore(Game game) {
     // No more giants left (win)
     if (game.giantsPos.size() == 0)
       return new MinimaxScore(Integer.MAX_VALUE);
+
     // Some giants are left but no more strikes left (lose)
     if (game.giantsPos.size() > 0 && game.thorLightningsLeft == 0)
       return new MinimaxScore(Integer.MIN_VALUE);
+
     // Giants kill thor (lose)
     for (int aGiantPos : game.giantsPos)
       if (aGiantPos == game.thorPos)
         return new MinimaxScore(Integer.MIN_VALUE);
 
+    return null;
+  }
+
+  public static MinimaxScore minimax(Game game, int depth, boolean isMaximizing, int alpha, int beta) {
+    MinimaxScore score = Game.gameScore(game);
+    if (score != null)
+      return score;
+
+    // Distance from centroid
     if (depth == 0)
-      return new MinimaxScore(0);
+      return new MinimaxScore(-Game.manhattanDistance(game.width, game.thorPos, game.getGiantsCentroidPos()));
 
     if (isMaximizing) {
       // Thor turn
@@ -232,9 +261,7 @@ class Game {
         game.thorLightningsLeft--;
         // Remove all giants with a manhattan distance of <= 9
         game.giantsPos = (ArrayList<Integer>) game.giantsPos.stream()
-            .filter(b -> Math.abs(Game.posToX(game.width, b) - Game.posToX(game.width, game.thorPos))
-                + Math.abs(Game.posToY(game.width, b) - Game.posToY(game.width, game.thorPos)) >= 5/* 9 */)
-            .collect(Collectors.toList());
+            .filter(b -> Game.manhattanDistance(game.width, game.thorPos, b) >= 5/* 9 */).collect(Collectors.toList());
 
         MinimaxScore strikeScore = minimax(game, depth - 1, false, alpha, beta);
         game.thorLightningsLeft = thorLightingsLeft;
@@ -244,14 +271,14 @@ class Game {
       }
 
       // Try every Thor move
-      ArrayList<PossibleMove> possibleMove = Game.getPossibleMoves(game, game.thorPos);
+      ArrayList<PossibleMove> possibleMove = game.getPossibleMoves(game.thorPos);
       for (PossibleMove aPossibleMove : possibleMove) {
         int thorPos = game.thorPos;
         game.thorPos = aPossibleMove.cell.pos;
 
-        MinimaxScore score = minimax(game, depth - 1, false, alpha, beta);
-        if (score.score > bestScore.score)
-          bestScore = new MinimaxScore(score.score, aPossibleMove.action, aPossibleMove.cell.pos);
+        MinimaxScore moveScore = minimax(game, depth - 1, false, alpha, beta);
+        if (moveScore.score > bestScore.score)
+          bestScore = new MinimaxScore(moveScore.score, aPossibleMove.action, aPossibleMove.cell.pos);
 
         game.thorPos = thorPos;
       }
@@ -271,15 +298,13 @@ class Game {
       ArrayList<Integer> newGiantsPos = new ArrayList<>(game.giantsPos);
 
       for (int aGiantPos : game.giantsPos) {
-        ArrayList<PossibleMove> aGiantMoves = getPossibleMoves(game, aGiantPos);
+        ArrayList<PossibleMove> aGiantMoves = game.getPossibleMoves(aGiantPos);
 
         int closestToThorDistance = Integer.MAX_VALUE;
         int closestToThorPos = 0;
         // For all possible moves of this giant, find the closest to Thor
         for (PossibleMove aGiantMove : aGiantMoves) {
-          int distanceFromThor = Math
-              .abs(Game.posToX(game.width, aGiantMove.cell.pos) - Game.posToX(game.width, game.thorPos))
-              + Math.abs(Game.posToY(game.width, aGiantMove.cell.pos) - Game.posToY(game.width, game.thorPos));
+          int distanceFromThor = Game.manhattanDistance(game.width, game.thorPos, aGiantMove.cell.pos);
           if (distanceFromThor < closestToThorDistance) {
             closestToThorDistance = distanceFromThor;
             closestToThorPos = aGiantMove.cell.pos;
@@ -339,6 +364,9 @@ class Player {
       MinimaxScore move = Game.minimax(game, 6, true, Integer.MIN_VALUE, Integer.MAX_VALUE);
       game.setThorPos(move.newThorPosition);
       System.out.println(move.action);
+
+      int centroid = game.getGiantsCentroidPos();
+      System.err.println("Centroid: " + Game.posToX(game.width, centroid) + " " + Game.posToY(game.width, centroid));
 
       // The movement or action to be carried out: WAIT STRIKE N NE E SE S SW W or N
       // System.out.println("WAIT");
