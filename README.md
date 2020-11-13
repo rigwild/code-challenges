@@ -27,6 +27,9 @@ This is a collection of some of my submissions to code challenges/contests.
 | [`horse-racing-duals`](./challenges/codingame-horse-racing-duals) | codingame |
 | [`mars-lander-episode-1`](./challenges/codingame-mars-lander-episode-1) | codingame |
 | [`mime-type`](./challenges/codingame-mime-type) | codingame |
+| [`order-of-succession`](./challenges/codingame-order-of-succession) | codingame |
+| [`power-of-thor-episode-1`](./challenges/codingame-power-of-thor-episode-1) | codingame |
+| [`power-of-thor-episode-2`](./challenges/codingame-power-of-thor-episode-2) | codingame |
 | [`rectangle-partition`](./challenges/codingame-rectangle-partition) | codingame |
 | [`rock-paper-scissors-lizard-spock`](./challenges/codingame-rock-paper-scissors-lizard-spock) | codingame |
 | [`rock-paper-scissors-war`](./challenges/codingame-rock-paper-scissors-war) | codingame |
@@ -49,6 +52,7 @@ This is a collection of some of my submissions to code challenges/contests.
 
 | Name | Platform |
 | ---- | -------- |
+| [`fall-challenge-2020`](./challenges/codingame-fall-challenge-2020) | codingame |
 | [`spring-challenge-2020`](./challenges/codingame-spring-challenge-2020) | codingame |
 
 ___
@@ -66,9 +70,13 @@ ___
 | [`chuck-norris-codesize`](./challenges/codingame-chuck-norris-codesize) | Code golf |
 | [`defibrillators`](./challenges/codingame-defibrillators) | Classic |
 | [`dont-panic-episode-1`](./challenges/codingame-dont-panic-episode-1) | Classic |
+| [`fall-challenge-2020`](./challenges/codingame-fall-challenge-2020) | Contest |
 | [`horse-racing-duals`](./challenges/codingame-horse-racing-duals) | Classic |
 | [`mars-lander-episode-1`](./challenges/codingame-mars-lander-episode-1) | Classic |
 | [`mime-type`](./challenges/codingame-mime-type) | Classic |
+| [`order-of-succession`](./challenges/codingame-order-of-succession) | Classic |
+| [`power-of-thor-episode-1`](./challenges/codingame-power-of-thor-episode-1) | Classic |
+| [`power-of-thor-episode-2`](./challenges/codingame-power-of-thor-episode-2) | Classic |
 | [`rectangle-partition`](./challenges/codingame-rectangle-partition) | Classic |
 | [`rock-paper-scissors-lizard-spock`](./challenges/codingame-rock-paper-scissors-lizard-spock) | Classic |
 | [`rock-paper-scissors-war`](./challenges/codingame-rock-paper-scissors-war) | Classic |
@@ -95,9 +103,13 @@ ___
 | [`chuck-norris-codesize`](./challenges/codingame-chuck-norris-codesize) | codingame | Code golf |
 | [`defibrillators`](./challenges/codingame-defibrillators) | codingame | Classic |
 | [`dont-panic-episode-1`](./challenges/codingame-dont-panic-episode-1) | codingame | Classic |
+| [`fall-challenge-2020`](./challenges/codingame-fall-challenge-2020) | codingame | Contest |
 | [`horse-racing-duals`](./challenges/codingame-horse-racing-duals) | codingame | Classic |
 | [`mars-lander-episode-1`](./challenges/codingame-mars-lander-episode-1) | codingame | Classic |
 | [`mime-type`](./challenges/codingame-mime-type) | codingame | Classic |
+| [`order-of-succession`](./challenges/codingame-order-of-succession) | codingame | Classic |
+| [`power-of-thor-episode-1`](./challenges/codingame-power-of-thor-episode-1) | codingame | Classic |
+| [`power-of-thor-episode-2`](./challenges/codingame-power-of-thor-episode-2) | codingame | Classic |
 | [`rectangle-partition`](./challenges/codingame-rectangle-partition) | codingame | Classic |
 | [`rock-paper-scissors-lizard-spock`](./challenges/codingame-rock-paper-scissors-lizard-spock) | codingame | Classic |
 | [`rock-paper-scissors-war`](./challenges/codingame-rock-paper-scissors-war) | codingame | Classic |
