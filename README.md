@@ -24,6 +24,7 @@ This is a collection of some of my submissions to code challenges/contests.
 | [`brackets-extreme-edition`](./challenges/codingame-brackets-extreme-edition) | codingame |
 | [`defibrillators`](./challenges/codingame-defibrillators) | codingame |
 | [`dont-panic-episode-1`](./challenges/codingame-dont-panic-episode-1) | codingame |
+| [`ghost-legs`](./challenges/codingame-ghost-legs) | codingame |
 | [`horse-racing-duals`](./challenges/codingame-horse-racing-duals) | codingame |
 | [`mars-lander-episode-1`](./challenges/codingame-mars-lander-episode-1) | codingame |
 | [`mime-type`](./challenges/codingame-mime-type) | codingame |
@@ -71,6 +72,7 @@ ___
 | [`defibrillators`](./challenges/codingame-defibrillators) | Classic |
 | [`dont-panic-episode-1`](./challenges/codingame-dont-panic-episode-1) | Classic |
 | [`fall-challenge-2020`](./challenges/codingame-fall-challenge-2020) | Contest |
+| [`ghost-legs`](./challenges/codingame-ghost-legs) | Classic |
 | [`horse-racing-duals`](./challenges/codingame-horse-racing-duals) | Classic |
 | [`mars-lander-episode-1`](./challenges/codingame-mars-lander-episode-1) | Classic |
 | [`mime-type`](./challenges/codingame-mime-type) | Classic |
@@ -104,6 +106,7 @@ ___
 | [`defibrillators`](./challenges/codingame-defibrillators) | codingame | Classic |
 | [`dont-panic-episode-1`](./challenges/codingame-dont-panic-episode-1) | codingame | Classic |
 | [`fall-challenge-2020`](./challenges/codingame-fall-challenge-2020) | codingame | Contest |
+| [`ghost-legs`](./challenges/codingame-ghost-legs) | codingame | Classic |
 | [`horse-racing-duals`](./challenges/codingame-horse-racing-duals) | codingame | Classic |
 | [`mars-lander-episode-1`](./challenges/codingame-mars-lander-episode-1) | codingame | Classic |
 | [`mime-type`](./challenges/codingame-mime-type) | codingame | Classic |
