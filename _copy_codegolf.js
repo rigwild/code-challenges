@@ -2,18 +2,17 @@
 // Minify script
 // Copy output to clipboard
 
-const { promises: fsp } = require('fs')
-const { resolve: r } = require('path')
+const { promises: fs } = require('fs')
 
 const clipboardy = require('clipboardy')
 const terser = require('terser')
 
-const file = r(__dirname, 'index.js')
-const outputMin = r(__dirname, 'index.min.js')
+const file = 'index.js'
+const outputMin = 'index.min.js'
 const separator = '// ------ Everything above this line will get cut when running copy script'
 
 const run = async () => {
-  const content = await fsp.readFile(file, { encoding: 'utf8' })
+  const content = await fs.readFile(file, { encoding: 'utf8' })
   let script = ''
 
   // Split polyfill
@@ -30,7 +29,7 @@ const run = async () => {
     ecma: 2020,
     mangle: {
       toplevel: true,
-      eval: true
+      eval: true,
     },
     compress: {
       defaults: true,
@@ -49,9 +48,9 @@ const run = async () => {
       unsafe_methods: true,
       unsafe_proto: true,
       unsafe_regexp: true,
-      unsafe_undefined: true
+      unsafe_undefined: true,
     },
-    toplevel: true
+    toplevel: true,
   })
 
   if (minified.error) return console.error(minified)
@@ -65,7 +64,7 @@ const run = async () => {
   console.log(`\nMinified without const/let/var and dangling semicolon (${final.length} chars):`)
   console.log(final)
 
-  await fsp.writeFile(outputMin, final)
+  await fs.writeFile(outputMin, final)
 
   await clipboardy.write(final)
   console.log('\nCopied script to clipboard.')

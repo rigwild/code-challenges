@@ -1,17 +1,38 @@
 {
   "name": "code-challenges",
   "private": true,
+  "version": "0.1.0",
   "author": {
     "name": "rigwild",
     "email": "me@rigwild.dev",
     "url": "https://rigwild.dev"
   },
   "license": "WTFPL",
-  "devDependencies": {
-    "lerna": "^3.20.2"
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "tsc",
+    "dev": "tsc && node dist/index.js",
+    "copy": "node ../../_copy.js",
+    "test": "ava --verbose"
   },
-  "workspaces": [
-    "_templates/*",
-    "challenges/*"
-  ]
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "@types/node": "^13.13.5",
+    "@types/readline-sync": "^1.4.3",
+    "ava": "^3.8.2",
+    "clipboardy": "^2.3.0",
+    "terser": "^5.16.0",
+    "ts-node": "^8.10.1",
+    "typescript": "^3.8.3"
+  },
+  "ava": {
+    "extensions": [
+      "ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ]
+  }
 }

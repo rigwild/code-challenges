@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "ES2019",
+    "target": "ES2022",
     "module": "commonjs",
     "declaration": false,
     "declarationMap": false,
@@ -11,6 +11,6 @@
     "esModuleInterop": true,
     "resolveJsonModule": true
   },
-  "include": ["*"],
+  "include": ["challenges/**/*"],
   "exclude": ["node_modules/**/*"]
 }
