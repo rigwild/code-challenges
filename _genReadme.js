@@ -1,18 +1,28 @@
 const { promises: fs } = require('fs')
-const { resolve: r } = require('path')
+const { resolve } = require('path')
 
 const readme = (challenges, challengesByPlatform, challengesByType) => `
 # code-challenges
+
 This is a collection of some of my submissions to code challenges/contests.
 
 ## TOC
- - [Grouped by type](#grouped-by-type)
-   - [Classic](#classic)
-   - [Code Golf](#code-golf)
-   - [Contest](#contest)
- - [Grouped by platform](#grouped-by-platform)
-   - [CodinGame](#codingame)
- - [All challenges](#all-challenges)
+
+- [Grouped by type](#grouped-by-type)
+  - [Classic](#classic)
+  - [Code Golf](#code-golf)
+  - [Contest](#contest)
+- [Grouped by platform](#grouped-by-platform)
+  - [CodinGame](#codingame)
+  - [LeetCode](#leetcode)
+- [All challenges](#all-challenges)
+
+## Add a challenge
+
+\`\`\`sh
+pnpm i
+zx _initChallenge.mjs
+\`\`\`
 
 ## Challenges
 
@@ -70,8 +80,10 @@ TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
 `
 
 const setup = async () => {
-  const challengesPath = r(__dirname, 'challenges')
-  const challengesRaw = await fs.readdir(challengesPath)
+  const challengesPath = resolve(__dirname, 'challenges')
+  const challengesRaw = (await fs.readdir(challengesPath)).sort((a, b) =>
+    a.replace(/^.*?-/, '').localeCompare(b.replace(/^.*?-/, ''))
+  )
 
   let challenges = []
 
@@ -79,7 +91,7 @@ const setup = async () => {
     const s = aChallenge.split('-')
     const name = s.slice(1).join('-')
     const platform = s[0]
-    const challengeReadme = await fs.readFile(r(challengesPath, aChallenge, 'README.md'), { encoding: 'utf-8' })
+    const challengeReadme = await fs.readFile(resolve(challengesPath, aChallenge, 'README.md'), { encoding: 'utf-8' })
     const type = challengeReadme.match(/\*\*Type\:\*\*\s(.*)/)[1]
 
     challenges.push({ name, platform, type, raw: aChallenge })
@@ -103,6 +115,6 @@ const setup = async () => {
   console.log()
   console.log(result)
 
-  await fs.writeFile(r(__dirname, 'README.md'), `${result.trim()}\n`)
+  await fs.writeFile(resolve(__dirname, 'README.md'), `${result.trim()}\n`)
 }
 setup()

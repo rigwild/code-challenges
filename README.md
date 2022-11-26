@@ -1,14 +1,24 @@
 # code-challenges
+
 This is a collection of some of my submissions to code challenges/contests.
 
 ## TOC
- - [Grouped by type](#grouped-by-type)
-   - [Classic](#classic)
-   - [Code Golf](#code-golf)
-   - [Contest](#contest)
- - [Grouped by platform](#grouped-by-platform)
-   - [CodinGame](#codingame)
- - [All challenges](#all-challenges)
+
+- [Grouped by type](#grouped-by-type)
+  - [Classic](#classic)
+  - [Code Golf](#code-golf)
+  - [Contest](#contest)
+- [Grouped by platform](#grouped-by-platform)
+  - [CodinGame](#codingame)
+  - [LeetCode](#leetcode)
+- [All challenges](#all-challenges)
+
+## Add a challenge
+
+```sh
+pnpm i
+zx _initChallenge.mjs
+```
 
 ## Challenges
 
@@ -19,6 +29,9 @@ This is a collection of some of my submissions to code challenges/contests.
 | Name | Platform |
 | ---- | -------- |
 | [`1d-spreadsheet`](./challenges/codingame-1d-spreadsheet) | codingame |
+| [`2481-minimum-cuts-to-divide-a-circle`](./challenges/leetcode-2481-minimum-cuts-to-divide-a-circle) | leetcode |
+| [`2482-difference-between-ones-and-zeros-in-row-and-column`](./challenges/leetcode-2482-difference-between-ones-and-zeros-in-row-and-column) | leetcode |
+| [`2483-minimum-penalty-for-a-shop`](./challenges/leetcode-2483-minimum-penalty-for-a-shop) | leetcode |
 | [`aneo`](./challenges/codingame-aneo) | codingame |
 | [`ascii-art`](./challenges/codingame-ascii-art) | codingame |
 | [`brackets-extreme-edition`](./challenges/codingame-brackets-extreme-edition) | codingame |
@@ -92,6 +105,14 @@ ___
 | [`the-labyrinth`](./challenges/codingame-the-labyrinth) | Classic |
 | [`there-is-no-spoon-episode-1`](./challenges/codingame-there-is-no-spoon-episode-1) | Classic |
 
+#### leetcode
+
+| Name | Type |
+| ---- | ---- |
+| [`2481-minimum-cuts-to-divide-a-circle`](./challenges/leetcode-2481-minimum-cuts-to-divide-a-circle) | Classic |
+| [`2482-difference-between-ones-and-zeros-in-row-and-column`](./challenges/leetcode-2482-difference-between-ones-and-zeros-in-row-and-column) | Classic |
+| [`2483-minimum-penalty-for-a-shop`](./challenges/leetcode-2483-minimum-penalty-for-a-shop) | Classic |
+
 ___
 
 ### All challenges
@@ -99,6 +120,9 @@ ___
 | Name | Platform | Type |
 | ---- | -------- | ---- |
 | [`1d-spreadsheet`](./challenges/codingame-1d-spreadsheet) | codingame | Classic |
+| [`2481-minimum-cuts-to-divide-a-circle`](./challenges/leetcode-2481-minimum-cuts-to-divide-a-circle) | leetcode | Classic |
+| [`2482-difference-between-ones-and-zeros-in-row-and-column`](./challenges/leetcode-2482-difference-between-ones-and-zeros-in-row-and-column) | leetcode | Classic |
+| [`2483-minimum-penalty-for-a-shop`](./challenges/leetcode-2483-minimum-penalty-for-a-shop) | leetcode | Classic |
 | [`aneo`](./challenges/codingame-aneo) | codingame | Classic |
 | [`ascii-art`](./challenges/codingame-ascii-art) | codingame | Classic |
 | [`brackets-extreme-edition`](./challenges/codingame-brackets-extreme-edition) | codingame | Classic |

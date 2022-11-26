@@ -12,7 +12,7 @@ const separator = '// ------ Everything above this line will get cut when runnin
 const sha256 = str => createHmac('sha256', 'shitty-salt').update(str).digest('hex')
 
 const run = async () => {
-  const content = await fs.readFile('index.ts', { encoding: 'utf8' })
+  const content = await fs.readFile('ts.ts', { encoding: 'utf8' })
 
   let script = ''
   if (content.includes(separator)) script = content.split(separator)[1].trim()

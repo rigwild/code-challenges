@@ -7,8 +7,8 @@ const { promises: fs } = require('fs')
 const clipboardy = require('clipboardy')
 const terser = require('terser')
 
-const file = 'index.js'
-const outputMin = 'index.min.js'
+const file = 'js.js'
+const outputMin = 'js.min.js'
 const separator = '// ------ Everything above this line will get cut when running copy script'
 
 const run = async () => {
