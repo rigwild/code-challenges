@@ -2,6 +2,7 @@
 // @ts-check
 import 'zx/globals'
 
+console.log(argv)
 const toKebabCase = str =>
   str
     .normalize('NFD')
@@ -14,13 +15,22 @@ const toKebabCase = str =>
 let name = await question('Puzzle/question/challenge name: ')
 if (!name) throw new Error('Name is required')
 
-const url = await question('Full URL: ')
+let url = ''
+if (argv.leetcode) {
+  const matches = name.match(/\d+\. (.*)/)
+  if (!matches) throw new Error('Invalid leetcode name')
+  const nameWithoutId = matches[1]
+  url = `https://leetcode.com/problems/${toKebabCase(nameWithoutId)}`
+} else {
+  url = await question('Full URL: ')
+}
 if (!url) throw new Error('URL is required')
 
-let template = await question('Template to use (ts, ts-full, js, js-codegolf) [ts]: ', {
-  choices: ['ts', 'ts-full', 'js', 'js-codegolf'],
-})
-if (!template) template = 'ts'
+const templates = ['ts', 'ts-full', 'js', 'js-codegolf', 'js-leetcode']
+let template = templates.find(t => argv[t])
+if (!template) {
+  template = (await question('Template to use (ts, ts-full, js, js-codegolf) [ts]: ', { choices: templates })) || 'ts'
+}
 
 name = toKebabCase(name)
 
@@ -37,4 +47,8 @@ README = README.replace('codingame-temperatures', name)
 README = README.replace('https://www.codingame.com/training/easy/temperatures', url)
 await fs.writeFile(challengeReadmePath, README, { encoding: 'utf-8' })
 
+console.log()
+console.log('name:', name)
+console.log('url :', url)
+console.log()
 console.log(`Initialized challenge at challenges/${name}`)
