@@ -3,6 +3,7 @@
  * @return {number}
  */
 var bestClosingTime = function (customers) {
+  console.log('##########')
   let penalty = 0
   for (let i = 0; i < customers.length; i++) {
     if (customers.charAt(i) === 'Y') penalty++
@@ -20,7 +21,7 @@ var bestClosingTime = function (customers) {
       minPenalty = penalty
       minPenaltyEarliestHour = i
     }
-    console.log(i, penalty, '---', minPenalty, minPenaltyEarliestHour)
+    // console.log(i, penalty, '---', minPenalty, minPenaltyEarliestHour)
   }
 
   return minPenaltyEarliestHour

@@ -32,6 +32,8 @@ zx _initChallenge.mjs
 | [`2481-minimum-cuts-to-divide-a-circle`](./challenges/leetcode-2481-minimum-cuts-to-divide-a-circle) | leetcode |
 | [`2482-difference-between-ones-and-zeros-in-row-and-column`](./challenges/leetcode-2482-difference-between-ones-and-zeros-in-row-and-column) | leetcode |
 | [`2483-minimum-penalty-for-a-shop`](./challenges/leetcode-2483-minimum-penalty-for-a-shop) | leetcode |
+| [`6261-maximum-value-of-a-string-in-an-array`](./challenges/leetcode-6261-maximum-value-of-a-string-in-an-array) | leetcode |
+| [`6262-maximum-star-sum-of-a-graph`](./challenges/leetcode-6262-maximum-star-sum-of-a-graph) | leetcode |
 | [`aneo`](./challenges/codingame-aneo) | codingame |
 | [`ascii-art`](./challenges/codingame-ascii-art) | codingame |
 | [`brackets-extreme-edition`](./challenges/codingame-brackets-extreme-edition) | codingame |
@@ -112,6 +114,8 @@ ___
 | [`2481-minimum-cuts-to-divide-a-circle`](./challenges/leetcode-2481-minimum-cuts-to-divide-a-circle) | Classic |
 | [`2482-difference-between-ones-and-zeros-in-row-and-column`](./challenges/leetcode-2482-difference-between-ones-and-zeros-in-row-and-column) | Classic |
 | [`2483-minimum-penalty-for-a-shop`](./challenges/leetcode-2483-minimum-penalty-for-a-shop) | Classic |
+| [`6261-maximum-value-of-a-string-in-an-array`](./challenges/leetcode-6261-maximum-value-of-a-string-in-an-array) | Classic |
+| [`6262-maximum-star-sum-of-a-graph`](./challenges/leetcode-6262-maximum-star-sum-of-a-graph) | Classic |
 
 ___
 
@@ -123,6 +127,8 @@ ___
 | [`2481-minimum-cuts-to-divide-a-circle`](./challenges/leetcode-2481-minimum-cuts-to-divide-a-circle) | leetcode | Classic |
 | [`2482-difference-between-ones-and-zeros-in-row-and-column`](./challenges/leetcode-2482-difference-between-ones-and-zeros-in-row-and-column) | leetcode | Classic |
 | [`2483-minimum-penalty-for-a-shop`](./challenges/leetcode-2483-minimum-penalty-for-a-shop) | leetcode | Classic |
+| [`6261-maximum-value-of-a-string-in-an-array`](./challenges/leetcode-6261-maximum-value-of-a-string-in-an-array) | leetcode | Classic |
+| [`6262-maximum-star-sum-of-a-graph`](./challenges/leetcode-6262-maximum-star-sum-of-a-graph) | leetcode | Classic |
 | [`aneo`](./challenges/codingame-aneo) | codingame | Classic |
 | [`ascii-art`](./challenges/codingame-ascii-art) | codingame | Classic |
 | [`brackets-extreme-edition`](./challenges/codingame-brackets-extreme-edition) | codingame | Classic |
