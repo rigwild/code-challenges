@@ -20,6 +20,12 @@ pnpm i
 zx _initChallenge.mjs
 ```
 
+## Generate README
+
+```sh
+zx _genReadme.mjs
+```
+
 ## Challenges
 
 ### Grouped by type
@@ -32,8 +38,12 @@ zx _initChallenge.mjs
 | [`2481-minimum-cuts-to-divide-a-circle`](./challenges/leetcode-2481-minimum-cuts-to-divide-a-circle) | leetcode |
 | [`2482-difference-between-ones-and-zeros-in-row-and-column`](./challenges/leetcode-2482-difference-between-ones-and-zeros-in-row-and-column) | leetcode |
 | [`2483-minimum-penalty-for-a-shop`](./challenges/leetcode-2483-minimum-penalty-for-a-shop) | leetcode |
+| [`2511-maximum-enemy-forts-that-can-be-captured`](./challenges/leetcode-2511-maximum-enemy-forts-that-can-be-captured) | leetcode |
+| [`2512-reward-top-k-students`](./challenges/leetcode-2512-reward-top-k-students) | leetcode |
 | [`6261-maximum-value-of-a-string-in-an-array`](./challenges/leetcode-6261-maximum-value-of-a-string-in-an-array) | leetcode |
 | [`6262-maximum-star-sum-of-a-graph`](./challenges/leetcode-6262-maximum-star-sum-of-a-graph) | leetcode |
+| [`6287-categorize-box-according-to-criteria`](./challenges/leetcode-6287-categorize-box-according-to-criteria) | leetcode |
+| [`6288-find-consecutive-integers-from-a-data-stream`](./challenges/leetcode-6288-find-consecutive-integers-from-a-data-stream) | leetcode |
 | [`aneo`](./challenges/codingame-aneo) | codingame |
 | [`ascii-art`](./challenges/codingame-ascii-art) | codingame |
 | [`brackets-extreme-edition`](./challenges/codingame-brackets-extreme-edition) | codingame |
@@ -114,8 +124,12 @@ ___
 | [`2481-minimum-cuts-to-divide-a-circle`](./challenges/leetcode-2481-minimum-cuts-to-divide-a-circle) | Classic |
 | [`2482-difference-between-ones-and-zeros-in-row-and-column`](./challenges/leetcode-2482-difference-between-ones-and-zeros-in-row-and-column) | Classic |
 | [`2483-minimum-penalty-for-a-shop`](./challenges/leetcode-2483-minimum-penalty-for-a-shop) | Classic |
+| [`2511-maximum-enemy-forts-that-can-be-captured`](./challenges/leetcode-2511-maximum-enemy-forts-that-can-be-captured) | Classic |
+| [`2512-reward-top-k-students`](./challenges/leetcode-2512-reward-top-k-students) | Classic |
 | [`6261-maximum-value-of-a-string-in-an-array`](./challenges/leetcode-6261-maximum-value-of-a-string-in-an-array) | Classic |
 | [`6262-maximum-star-sum-of-a-graph`](./challenges/leetcode-6262-maximum-star-sum-of-a-graph) | Classic |
+| [`6287-categorize-box-according-to-criteria`](./challenges/leetcode-6287-categorize-box-according-to-criteria) | Classic |
+| [`6288-find-consecutive-integers-from-a-data-stream`](./challenges/leetcode-6288-find-consecutive-integers-from-a-data-stream) | Classic |
 
 ___
 
@@ -127,8 +141,12 @@ ___
 | [`2481-minimum-cuts-to-divide-a-circle`](./challenges/leetcode-2481-minimum-cuts-to-divide-a-circle) | leetcode | Classic |
 | [`2482-difference-between-ones-and-zeros-in-row-and-column`](./challenges/leetcode-2482-difference-between-ones-and-zeros-in-row-and-column) | leetcode | Classic |
 | [`2483-minimum-penalty-for-a-shop`](./challenges/leetcode-2483-minimum-penalty-for-a-shop) | leetcode | Classic |
+| [`2511-maximum-enemy-forts-that-can-be-captured`](./challenges/leetcode-2511-maximum-enemy-forts-that-can-be-captured) | leetcode | Classic |
+| [`2512-reward-top-k-students`](./challenges/leetcode-2512-reward-top-k-students) | leetcode | Classic |
 | [`6261-maximum-value-of-a-string-in-an-array`](./challenges/leetcode-6261-maximum-value-of-a-string-in-an-array) | leetcode | Classic |
 | [`6262-maximum-star-sum-of-a-graph`](./challenges/leetcode-6262-maximum-star-sum-of-a-graph) | leetcode | Classic |
+| [`6287-categorize-box-according-to-criteria`](./challenges/leetcode-6287-categorize-box-according-to-criteria) | leetcode | Classic |
+| [`6288-find-consecutive-integers-from-a-data-stream`](./challenges/leetcode-6288-find-consecutive-integers-from-a-data-stream) | leetcode | Classic |
 | [`aneo`](./challenges/codingame-aneo) | codingame | Classic |
 | [`ascii-art`](./challenges/codingame-ascii-art) | codingame | Classic |
 | [`brackets-extreme-edition`](./challenges/codingame-brackets-extreme-edition) | codingame | Classic |

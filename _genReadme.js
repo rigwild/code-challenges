@@ -24,6 +24,12 @@ pnpm i
 zx _initChallenge.mjs
 \`\`\`
 
+## Generate README
+
+\`\`\`sh
+zx _genReadme.mjs
+\`\`\`
+
 ## Challenges
 
 ### Grouped by type

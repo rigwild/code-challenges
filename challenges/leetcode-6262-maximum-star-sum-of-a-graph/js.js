@@ -1,5 +1,3 @@
-// See output in README.md
-
 /**
  * @param {number[]} vals
  * @param {number[][]} edges

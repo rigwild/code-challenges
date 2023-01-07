@@ -2,7 +2,7 @@
 // @ts-check
 import 'zx/globals'
 
-console.log(argv)
+// console.log(argv)
 const toKebabCase = str =>
   str
     .normalize('NFD')
@@ -29,7 +29,9 @@ if (!url) throw new Error('URL is required')
 const templates = ['ts', 'ts-full', 'js', 'js-codegolf', 'js-leetcode']
 let template = templates.find(t => argv[t])
 if (!template) {
-  template = (await question('Template to use (ts, ts-full, js, js-codegolf) [ts]: ', { choices: templates })) || 'ts'
+  template =
+    (await question('Template to use (ts, ts-full, js, js-codegolf, js-leetcode) [ts]: ', { choices: templates })) ||
+    'ts'
 }
 
 name = toKebabCase(name)
