@@ -44,6 +44,7 @@ zx _genReadme.mjs
 | [`6262-maximum-star-sum-of-a-graph`](./challenges/leetcode-6262-maximum-star-sum-of-a-graph) | leetcode |
 | [`6287-categorize-box-according-to-criteria`](./challenges/leetcode-6287-categorize-box-according-to-criteria) | leetcode |
 | [`6288-find-consecutive-integers-from-a-data-stream`](./challenges/leetcode-6288-find-consecutive-integers-from-a-data-stream) | leetcode |
+| [`6300-minimum-common-value`](./challenges/leetcode-6300-minimum-common-value) | leetcode |
 | [`aneo`](./challenges/codingame-aneo) | codingame |
 | [`ascii-art`](./challenges/codingame-ascii-art) | codingame |
 | [`brackets-extreme-edition`](./challenges/codingame-brackets-extreme-edition) | codingame |
@@ -130,6 +131,7 @@ ___
 | [`6262-maximum-star-sum-of-a-graph`](./challenges/leetcode-6262-maximum-star-sum-of-a-graph) | Classic |
 | [`6287-categorize-box-according-to-criteria`](./challenges/leetcode-6287-categorize-box-according-to-criteria) | Classic |
 | [`6288-find-consecutive-integers-from-a-data-stream`](./challenges/leetcode-6288-find-consecutive-integers-from-a-data-stream) | Classic |
+| [`6300-minimum-common-value`](./challenges/leetcode-6300-minimum-common-value) | Classic |
 
 ___
 
@@ -147,6 +149,7 @@ ___
 | [`6262-maximum-star-sum-of-a-graph`](./challenges/leetcode-6262-maximum-star-sum-of-a-graph) | leetcode | Classic |
 | [`6287-categorize-box-according-to-criteria`](./challenges/leetcode-6287-categorize-box-according-to-criteria) | leetcode | Classic |
 | [`6288-find-consecutive-integers-from-a-data-stream`](./challenges/leetcode-6288-find-consecutive-integers-from-a-data-stream) | leetcode | Classic |
+| [`6300-minimum-common-value`](./challenges/leetcode-6300-minimum-common-value) | leetcode | Classic |
 | [`aneo`](./challenges/codingame-aneo) | codingame | Classic |
 | [`ascii-art`](./challenges/codingame-ascii-art) | codingame | Classic |
 | [`brackets-extreme-edition`](./challenges/codingame-brackets-extreme-edition) | codingame | Classic |
