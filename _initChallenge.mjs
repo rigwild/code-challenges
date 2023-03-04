@@ -27,7 +27,12 @@ if (argv.leetcode) {
 if (!url) throw new Error('URL is required')
 
 const templates = ['ts', 'ts-full', 'js', 'js-codegolf', 'js-leetcode']
-let template = templates.find(t => argv[t])
+let template = ''
+const argvTemplate = argv.template
+if (argvTemplate) {
+  if (!templates.includes(argvTemplate)) throw new Error(`Invalid template: ${argvTemplate}`)
+  template = argvTemplate
+}
 if (!template) {
   template =
     (await question('Template to use (ts, ts-full, js, js-codegolf, js-leetcode) [ts]: ', { choices: templates })) ||

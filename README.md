@@ -40,11 +40,15 @@ zx _genReadme.mjs
 | [`2483-minimum-penalty-for-a-shop`](./challenges/leetcode-2483-minimum-penalty-for-a-shop) | leetcode |
 | [`2511-maximum-enemy-forts-that-can-be-captured`](./challenges/leetcode-2511-maximum-enemy-forts-that-can-be-captured) | leetcode |
 | [`2512-reward-top-k-students`](./challenges/leetcode-2512-reward-top-k-students) | leetcode |
+| [`2553-separate-the-digits-in-an-array`](./challenges/leetcode-2553-separate-the-digits-in-an-array) | leetcode |
+| [`2554-maximum-number-of-integers-to-choose-from-a-range-i`](./challenges/leetcode-2554-maximum-number-of-integers-to-choose-from-a-range-i) | leetcode |
 | [`6261-maximum-value-of-a-string-in-an-array`](./challenges/leetcode-6261-maximum-value-of-a-string-in-an-array) | leetcode |
 | [`6262-maximum-star-sum-of-a-graph`](./challenges/leetcode-6262-maximum-star-sum-of-a-graph) | leetcode |
 | [`6287-categorize-box-according-to-criteria`](./challenges/leetcode-6287-categorize-box-according-to-criteria) | leetcode |
 | [`6288-find-consecutive-integers-from-a-data-stream`](./challenges/leetcode-6288-find-consecutive-integers-from-a-data-stream) | leetcode |
 | [`6300-minimum-common-value`](./challenges/leetcode-6300-minimum-common-value) | leetcode |
+| [`6311-count-total-number-of-colored-cells`](./challenges/leetcode-6311-count-total-number-of-colored-cells) | leetcode |
+| [`6312-split-with-minimum-sum`](./challenges/leetcode-6312-split-with-minimum-sum) | leetcode |
 | [`aneo`](./challenges/codingame-aneo) | codingame |
 | [`ascii-art`](./challenges/codingame-ascii-art) | codingame |
 | [`brackets-extreme-edition`](./challenges/codingame-brackets-extreme-edition) | codingame |
@@ -127,11 +131,15 @@ ___
 | [`2483-minimum-penalty-for-a-shop`](./challenges/leetcode-2483-minimum-penalty-for-a-shop) | Classic |
 | [`2511-maximum-enemy-forts-that-can-be-captured`](./challenges/leetcode-2511-maximum-enemy-forts-that-can-be-captured) | Classic |
 | [`2512-reward-top-k-students`](./challenges/leetcode-2512-reward-top-k-students) | Classic |
+| [`2553-separate-the-digits-in-an-array`](./challenges/leetcode-2553-separate-the-digits-in-an-array) | Classic |
+| [`2554-maximum-number-of-integers-to-choose-from-a-range-i`](./challenges/leetcode-2554-maximum-number-of-integers-to-choose-from-a-range-i) | Classic |
 | [`6261-maximum-value-of-a-string-in-an-array`](./challenges/leetcode-6261-maximum-value-of-a-string-in-an-array) | Classic |
 | [`6262-maximum-star-sum-of-a-graph`](./challenges/leetcode-6262-maximum-star-sum-of-a-graph) | Classic |
 | [`6287-categorize-box-according-to-criteria`](./challenges/leetcode-6287-categorize-box-according-to-criteria) | Classic |
 | [`6288-find-consecutive-integers-from-a-data-stream`](./challenges/leetcode-6288-find-consecutive-integers-from-a-data-stream) | Classic |
 | [`6300-minimum-common-value`](./challenges/leetcode-6300-minimum-common-value) | Classic |
+| [`6311-count-total-number-of-colored-cells`](./challenges/leetcode-6311-count-total-number-of-colored-cells) | Classic |
+| [`6312-split-with-minimum-sum`](./challenges/leetcode-6312-split-with-minimum-sum) | Classic |
 
 ___
 
@@ -145,11 +153,15 @@ ___
 | [`2483-minimum-penalty-for-a-shop`](./challenges/leetcode-2483-minimum-penalty-for-a-shop) | leetcode | Classic |
 | [`2511-maximum-enemy-forts-that-can-be-captured`](./challenges/leetcode-2511-maximum-enemy-forts-that-can-be-captured) | leetcode | Classic |
 | [`2512-reward-top-k-students`](./challenges/leetcode-2512-reward-top-k-students) | leetcode | Classic |
+| [`2553-separate-the-digits-in-an-array`](./challenges/leetcode-2553-separate-the-digits-in-an-array) | leetcode | Classic |
+| [`2554-maximum-number-of-integers-to-choose-from-a-range-i`](./challenges/leetcode-2554-maximum-number-of-integers-to-choose-from-a-range-i) | leetcode | Classic |
 | [`6261-maximum-value-of-a-string-in-an-array`](./challenges/leetcode-6261-maximum-value-of-a-string-in-an-array) | leetcode | Classic |
 | [`6262-maximum-star-sum-of-a-graph`](./challenges/leetcode-6262-maximum-star-sum-of-a-graph) | leetcode | Classic |
 | [`6287-categorize-box-according-to-criteria`](./challenges/leetcode-6287-categorize-box-according-to-criteria) | leetcode | Classic |
 | [`6288-find-consecutive-integers-from-a-data-stream`](./challenges/leetcode-6288-find-consecutive-integers-from-a-data-stream) | leetcode | Classic |
 | [`6300-minimum-common-value`](./challenges/leetcode-6300-minimum-common-value) | leetcode | Classic |
+| [`6311-count-total-number-of-colored-cells`](./challenges/leetcode-6311-count-total-number-of-colored-cells) | leetcode | Classic |
+| [`6312-split-with-minimum-sum`](./challenges/leetcode-6312-split-with-minimum-sum) | leetcode | Classic |
 | [`aneo`](./challenges/codingame-aneo) | codingame | Classic |
 | [`ascii-art`](./challenges/codingame-ascii-art) | codingame | Classic |
 | [`brackets-extreme-edition`](./challenges/codingame-brackets-extreme-edition) | codingame | Classic |
@@ -183,7 +195,7 @@ ___
 DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
 Version 2, December 2004
 
-Copyright (C) rigwild <me@rigwild.dev>
+Copyright (C) rigwild
 
 Everyone is permitted to copy and distribute verbatim or modified
 copies of this license document, and changing it is allowed as long
