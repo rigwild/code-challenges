@@ -78,6 +78,7 @@ zx _genReadme.mjs
 | Name | Platform |
 | ---- | -------- |
 | [`chuck-norris-codesize`](./challenges/codingame-chuck-norris-codesize) | codingame |
+| [`power-of-thor-codesize`](./challenges/codingame-power-of-thor-codesize) | codingame |
 
 #### Contest
 
@@ -107,6 +108,7 @@ ___
 | [`mars-lander-episode-1`](./challenges/codingame-mars-lander-episode-1) | Classic |
 | [`mime-type`](./challenges/codingame-mime-type) | Classic |
 | [`order-of-succession`](./challenges/codingame-order-of-succession) | Classic |
+| [`power-of-thor-codesize`](./challenges/codingame-power-of-thor-codesize) | Code golf |
 | [`power-of-thor-episode-1`](./challenges/codingame-power-of-thor-episode-1) | Classic |
 | [`power-of-thor-episode-2`](./challenges/codingame-power-of-thor-episode-2) | Classic |
 | [`rectangle-partition`](./challenges/codingame-rectangle-partition) | Classic |
@@ -174,6 +176,7 @@ ___
 | [`mars-lander-episode-1`](./challenges/codingame-mars-lander-episode-1) | codingame | Classic |
 | [`mime-type`](./challenges/codingame-mime-type) | codingame | Classic |
 | [`order-of-succession`](./challenges/codingame-order-of-succession) | codingame | Classic |
+| [`power-of-thor-codesize`](./challenges/codingame-power-of-thor-codesize) | codingame | Code golf |
 | [`power-of-thor-episode-1`](./challenges/codingame-power-of-thor-episode-1) | codingame | Classic |
 | [`power-of-thor-episode-2`](./challenges/codingame-power-of-thor-episode-2) | codingame | Classic |
 | [`rectangle-partition`](./challenges/codingame-rectangle-partition) | codingame | Classic |
