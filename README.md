@@ -86,6 +86,7 @@ zx _genReadme.mjs
 | ---- | -------- |
 | [`fall-challenge-2020`](./challenges/codingame-fall-challenge-2020) | codingame |
 | [`spring-challenge-2020`](./challenges/codingame-spring-challenge-2020) | codingame |
+| [`winter-challenge-2023`](./challenges/codingame-winter-challenge-2023) | codingame |
 
 ___
 
@@ -123,6 +124,7 @@ ___
 | [`text-formatting`](./challenges/codingame-text-formatting) | Classic |
 | [`the-labyrinth`](./challenges/codingame-the-labyrinth) | Classic |
 | [`there-is-no-spoon-episode-1`](./challenges/codingame-there-is-no-spoon-episode-1) | Classic |
+| [`winter-challenge-2023`](./challenges/codingame-winter-challenge-2023) | Contest |
 
 #### leetcode
 
@@ -191,6 +193,7 @@ ___
 | [`text-formatting`](./challenges/codingame-text-formatting) | codingame | Classic |
 | [`the-labyrinth`](./challenges/codingame-the-labyrinth) | codingame | Classic |
 | [`there-is-no-spoon-episode-1`](./challenges/codingame-there-is-no-spoon-episode-1) | codingame | Classic |
+| [`winter-challenge-2023`](./challenges/codingame-winter-challenge-2023) | codingame | Contest |
 
 ## License
 
