@@ -49,6 +49,9 @@ zx _genReadme.mjs
 | [`6300-minimum-common-value`](./challenges/leetcode-6300-minimum-common-value) | leetcode |
 | [`6311-count-total-number-of-colored-cells`](./challenges/leetcode-6311-count-total-number-of-colored-cells) | leetcode |
 | [`6312-split-with-minimum-sum`](./challenges/leetcode-6312-split-with-minimum-sum) | leetcode |
+| [`6333-find-the-width-of-columns-of-a-grid`](./challenges/leetcode-6333-find-the-width-of-columns-of-a-grid) | leetcode |
+| [`6334-find-the-score-of-all-prefixes-of-an-array`](./challenges/leetcode-6334-find-the-score-of-all-prefixes-of-an-array) | leetcode |
+| [`6335-cousins-in-binary-tree-ii`](./challenges/leetcode-6335-cousins-in-binary-tree-ii) | leetcode |
 | [`aneo`](./challenges/codingame-aneo) | codingame |
 | [`ascii-art`](./challenges/codingame-ascii-art) | codingame |
 | [`brackets-extreme-edition`](./challenges/codingame-brackets-extreme-edition) | codingame |
@@ -144,6 +147,9 @@ ___
 | [`6300-minimum-common-value`](./challenges/leetcode-6300-minimum-common-value) | Classic |
 | [`6311-count-total-number-of-colored-cells`](./challenges/leetcode-6311-count-total-number-of-colored-cells) | Classic |
 | [`6312-split-with-minimum-sum`](./challenges/leetcode-6312-split-with-minimum-sum) | Classic |
+| [`6333-find-the-width-of-columns-of-a-grid`](./challenges/leetcode-6333-find-the-width-of-columns-of-a-grid) | Classic |
+| [`6334-find-the-score-of-all-prefixes-of-an-array`](./challenges/leetcode-6334-find-the-score-of-all-prefixes-of-an-array) | Classic |
+| [`6335-cousins-in-binary-tree-ii`](./challenges/leetcode-6335-cousins-in-binary-tree-ii) | Classic |
 
 ___
 
@@ -166,6 +172,9 @@ ___
 | [`6300-minimum-common-value`](./challenges/leetcode-6300-minimum-common-value) | leetcode | Classic |
 | [`6311-count-total-number-of-colored-cells`](./challenges/leetcode-6311-count-total-number-of-colored-cells) | leetcode | Classic |
 | [`6312-split-with-minimum-sum`](./challenges/leetcode-6312-split-with-minimum-sum) | leetcode | Classic |
+| [`6333-find-the-width-of-columns-of-a-grid`](./challenges/leetcode-6333-find-the-width-of-columns-of-a-grid) | leetcode | Classic |
+| [`6334-find-the-score-of-all-prefixes-of-an-array`](./challenges/leetcode-6334-find-the-score-of-all-prefixes-of-an-array) | leetcode | Classic |
+| [`6335-cousins-in-binary-tree-ii`](./challenges/leetcode-6335-cousins-in-binary-tree-ii) | leetcode | Classic |
 | [`aneo`](./challenges/codingame-aneo) | codingame | Classic |
 | [`ascii-art`](./challenges/codingame-ascii-art) | codingame | Classic |
 | [`brackets-extreme-edition`](./challenges/codingame-brackets-extreme-edition) | codingame | Classic |
