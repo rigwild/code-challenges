@@ -52,6 +52,10 @@ zx _genReadme.mjs
 | [`6333-find-the-width-of-columns-of-a-grid`](./challenges/leetcode-6333-find-the-width-of-columns-of-a-grid) | leetcode |
 | [`6334-find-the-score-of-all-prefixes-of-an-array`](./challenges/leetcode-6334-find-the-score-of-all-prefixes-of-an-array) | leetcode |
 | [`6335-cousins-in-binary-tree-ii`](./challenges/leetcode-6335-cousins-in-binary-tree-ii) | leetcode |
+| [`6403-maximum-number-of-fish-in-a-grid`](./challenges/leetcode-6403-maximum-number-of-fish-in-a-grid) | leetcode |
+| [`6404-make-array-empty`](./challenges/leetcode-6404-make-array-empty) | leetcode |
+| [`6405-find-the-prefix-common-array-of-two-arrays`](./challenges/leetcode-6405-find-the-prefix-common-array-of-two-arrays) | leetcode |
+| [`6406-maximum-sum-with-exactly-k-elements`](./challenges/leetcode-6406-maximum-sum-with-exactly-k-elements) | leetcode |
 | [`aneo`](./challenges/codingame-aneo) | codingame |
 | [`ascii-art`](./challenges/codingame-ascii-art) | codingame |
 | [`brackets-extreme-edition`](./challenges/codingame-brackets-extreme-edition) | codingame |
@@ -150,6 +154,10 @@ ___
 | [`6333-find-the-width-of-columns-of-a-grid`](./challenges/leetcode-6333-find-the-width-of-columns-of-a-grid) | Classic |
 | [`6334-find-the-score-of-all-prefixes-of-an-array`](./challenges/leetcode-6334-find-the-score-of-all-prefixes-of-an-array) | Classic |
 | [`6335-cousins-in-binary-tree-ii`](./challenges/leetcode-6335-cousins-in-binary-tree-ii) | Classic |
+| [`6403-maximum-number-of-fish-in-a-grid`](./challenges/leetcode-6403-maximum-number-of-fish-in-a-grid) | Classic |
+| [`6404-make-array-empty`](./challenges/leetcode-6404-make-array-empty) | Classic |
+| [`6405-find-the-prefix-common-array-of-two-arrays`](./challenges/leetcode-6405-find-the-prefix-common-array-of-two-arrays) | Classic |
+| [`6406-maximum-sum-with-exactly-k-elements`](./challenges/leetcode-6406-maximum-sum-with-exactly-k-elements) | Classic |
 
 ___
 
@@ -175,6 +183,10 @@ ___
 | [`6333-find-the-width-of-columns-of-a-grid`](./challenges/leetcode-6333-find-the-width-of-columns-of-a-grid) | leetcode | Classic |
 | [`6334-find-the-score-of-all-prefixes-of-an-array`](./challenges/leetcode-6334-find-the-score-of-all-prefixes-of-an-array) | leetcode | Classic |
 | [`6335-cousins-in-binary-tree-ii`](./challenges/leetcode-6335-cousins-in-binary-tree-ii) | leetcode | Classic |
+| [`6403-maximum-number-of-fish-in-a-grid`](./challenges/leetcode-6403-maximum-number-of-fish-in-a-grid) | leetcode | Classic |
+| [`6404-make-array-empty`](./challenges/leetcode-6404-make-array-empty) | leetcode | Classic |
+| [`6405-find-the-prefix-common-array-of-two-arrays`](./challenges/leetcode-6405-find-the-prefix-common-array-of-two-arrays) | leetcode | Classic |
+| [`6406-maximum-sum-with-exactly-k-elements`](./challenges/leetcode-6406-maximum-sum-with-exactly-k-elements) | leetcode | Classic |
 | [`aneo`](./challenges/codingame-aneo) | codingame | Classic |
 | [`ascii-art`](./challenges/codingame-ascii-art) | codingame | Classic |
 | [`brackets-extreme-edition`](./challenges/codingame-brackets-extreme-edition) | codingame | Classic |
