@@ -56,6 +56,9 @@ zx _genReadme.mjs
 | [`6404-make-array-empty`](./challenges/leetcode-6404-make-array-empty) | leetcode |
 | [`6405-find-the-prefix-common-array-of-two-arrays`](./challenges/leetcode-6405-find-the-prefix-common-array-of-two-arrays) | leetcode |
 | [`6406-maximum-sum-with-exactly-k-elements`](./challenges/leetcode-6406-maximum-sum-with-exactly-k-elements) | leetcode |
+| [`6425-find-the-longest-semi-repetitive-substring`](./challenges/leetcode-6425-find-the-longest-semi-repetitive-substring) | leetcode |
+| [`6426-movement-of-robots`](./challenges/leetcode-6426-movement-of-robots) | leetcode |
+| [`6461-check-if-the-number-is-fascinating`](./challenges/leetcode-6461-check-if-the-number-is-fascinating) | leetcode |
 | [`aneo`](./challenges/codingame-aneo) | codingame |
 | [`ascii-art`](./challenges/codingame-ascii-art) | codingame |
 | [`brackets-extreme-edition`](./challenges/codingame-brackets-extreme-edition) | codingame |
@@ -158,6 +161,9 @@ ___
 | [`6404-make-array-empty`](./challenges/leetcode-6404-make-array-empty) | Classic |
 | [`6405-find-the-prefix-common-array-of-two-arrays`](./challenges/leetcode-6405-find-the-prefix-common-array-of-two-arrays) | Classic |
 | [`6406-maximum-sum-with-exactly-k-elements`](./challenges/leetcode-6406-maximum-sum-with-exactly-k-elements) | Classic |
+| [`6425-find-the-longest-semi-repetitive-substring`](./challenges/leetcode-6425-find-the-longest-semi-repetitive-substring) | Classic |
+| [`6426-movement-of-robots`](./challenges/leetcode-6426-movement-of-robots) | Classic |
+| [`6461-check-if-the-number-is-fascinating`](./challenges/leetcode-6461-check-if-the-number-is-fascinating) | Classic |
 
 ___
 
@@ -187,6 +193,9 @@ ___
 | [`6404-make-array-empty`](./challenges/leetcode-6404-make-array-empty) | leetcode | Classic |
 | [`6405-find-the-prefix-common-array-of-two-arrays`](./challenges/leetcode-6405-find-the-prefix-common-array-of-two-arrays) | leetcode | Classic |
 | [`6406-maximum-sum-with-exactly-k-elements`](./challenges/leetcode-6406-maximum-sum-with-exactly-k-elements) | leetcode | Classic |
+| [`6425-find-the-longest-semi-repetitive-substring`](./challenges/leetcode-6425-find-the-longest-semi-repetitive-substring) | leetcode | Classic |
+| [`6426-movement-of-robots`](./challenges/leetcode-6426-movement-of-robots) | leetcode | Classic |
+| [`6461-check-if-the-number-is-fascinating`](./challenges/leetcode-6461-check-if-the-number-is-fascinating) | leetcode | Classic |
 | [`aneo`](./challenges/codingame-aneo) | codingame | Classic |
 | [`ascii-art`](./challenges/codingame-ascii-art) | codingame | Classic |
 | [`brackets-extreme-edition`](./challenges/codingame-brackets-extreme-edition) | codingame | Classic |
