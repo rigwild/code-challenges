@@ -59,6 +59,9 @@ zx _genReadme.mjs
 | [`6425-find-the-longest-semi-repetitive-substring`](./challenges/leetcode-6425-find-the-longest-semi-repetitive-substring) | leetcode |
 | [`6426-movement-of-robots`](./challenges/leetcode-6426-movement-of-robots) | leetcode |
 | [`6461-check-if-the-number-is-fascinating`](./challenges/leetcode-6461-check-if-the-number-is-fascinating) | leetcode |
+| [`6989-maximum-sum-of-almost-unique-subarray`](./challenges/leetcode-6989-maximum-sum-of-almost-unique-subarray) | leetcode |
+| [`7005-check-if-strings-can-be-made-equal-with-operations-ii`](./challenges/leetcode-7005-check-if-strings-can-be-made-equal-with-operations-ii) | leetcode |
+| [`7021-check-if-strings-can-be-made-equal-with-operations-i`](./challenges/leetcode-7021-check-if-strings-can-be-made-equal-with-operations-i) | leetcode |
 | [`aneo`](./challenges/codingame-aneo) | codingame |
 | [`ascii-art`](./challenges/codingame-ascii-art) | codingame |
 | [`brackets-extreme-edition`](./challenges/codingame-brackets-extreme-edition) | codingame |
@@ -164,6 +167,9 @@ ___
 | [`6425-find-the-longest-semi-repetitive-substring`](./challenges/leetcode-6425-find-the-longest-semi-repetitive-substring) | Classic |
 | [`6426-movement-of-robots`](./challenges/leetcode-6426-movement-of-robots) | Classic |
 | [`6461-check-if-the-number-is-fascinating`](./challenges/leetcode-6461-check-if-the-number-is-fascinating) | Classic |
+| [`6989-maximum-sum-of-almost-unique-subarray`](./challenges/leetcode-6989-maximum-sum-of-almost-unique-subarray) | Classic |
+| [`7005-check-if-strings-can-be-made-equal-with-operations-ii`](./challenges/leetcode-7005-check-if-strings-can-be-made-equal-with-operations-ii) | Classic |
+| [`7021-check-if-strings-can-be-made-equal-with-operations-i`](./challenges/leetcode-7021-check-if-strings-can-be-made-equal-with-operations-i) | Classic |
 
 ___
 
@@ -196,6 +202,9 @@ ___
 | [`6425-find-the-longest-semi-repetitive-substring`](./challenges/leetcode-6425-find-the-longest-semi-repetitive-substring) | leetcode | Classic |
 | [`6426-movement-of-robots`](./challenges/leetcode-6426-movement-of-robots) | leetcode | Classic |
 | [`6461-check-if-the-number-is-fascinating`](./challenges/leetcode-6461-check-if-the-number-is-fascinating) | leetcode | Classic |
+| [`6989-maximum-sum-of-almost-unique-subarray`](./challenges/leetcode-6989-maximum-sum-of-almost-unique-subarray) | leetcode | Classic |
+| [`7005-check-if-strings-can-be-made-equal-with-operations-ii`](./challenges/leetcode-7005-check-if-strings-can-be-made-equal-with-operations-ii) | leetcode | Classic |
+| [`7021-check-if-strings-can-be-made-equal-with-operations-i`](./challenges/leetcode-7021-check-if-strings-can-be-made-equal-with-operations-i) | leetcode | Classic |
 | [`aneo`](./challenges/codingame-aneo) | codingame | Classic |
 | [`ascii-art`](./challenges/codingame-ascii-art) | codingame | Classic |
 | [`brackets-extreme-edition`](./challenges/codingame-brackets-extreme-edition) | codingame | Classic |

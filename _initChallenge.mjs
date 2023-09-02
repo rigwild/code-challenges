@@ -35,8 +35,9 @@ if (argvTemplate) {
 }
 if (!template) {
   template =
-    (await question('Template to use (ts, ts-full, js, js-codegolf, js-leetcode) [ts]: ', { choices: templates })) ||
-    'ts'
+    (await question('Template to use (ts, ts-full, js, js-codegolf, js-leetcode) [js-leetcode]: ', {
+      choices: templates,
+    })) || 'js-leetcode'
 }
 
 name = toKebabCase(name)
