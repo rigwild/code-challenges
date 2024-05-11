@@ -1,5 +1,11 @@
-const { promises: fs } = require('fs')
-const { resolve } = require('path')
+// @ts-check
+
+import * as url from 'url'
+import * as path from 'path'
+import * as fs from 'fs/promises'
+
+const __filename = url.fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
 const readme = (challenges, challengesByPlatform, challengesByType) => `
 # code-challenges
@@ -48,6 +54,7 @@ ___
 
 ### Grouped by platform
 ${Object.entries(challengesByPlatform)
+  .sort(([a], [b]) => a.localeCompare(b))
   .map(
     ([platform, challenges]) => `
 #### ${platform}
@@ -86,10 +93,8 @@ TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
 `
 
 const setup = async () => {
-  const challengesPath = resolve(__dirname, 'challenges')
-  const challengesRaw = (await fs.readdir(challengesPath)).sort((a, b) =>
-    a.replace(/^.*?-/, '').localeCompare(b.replace(/^.*?-/, ''))
-  )
+  const challengesPath = path.resolve(__dirname, 'challenges')
+  const challengesRaw = (await fs.readdir(challengesPath)).sort((a, b) => a.replace(/^.*?-/, '').localeCompare(b.replace(/^.*?-/, '')))
 
   let challenges = []
 
@@ -97,7 +102,7 @@ const setup = async () => {
     const s = aChallenge.split('-')
     const name = s.slice(1).join('-')
     const platform = s[0]
-    const challengeReadme = await fs.readFile(resolve(challengesPath, aChallenge, 'README.md'), { encoding: 'utf-8' })
+    const challengeReadme = await fs.readFile(path.resolve(challengesPath, aChallenge, 'README.md'), { encoding: 'utf-8' })
     const type = challengeReadme.match(/\*\*Type\:\*\*\s(.*)/)[1]
 
     challenges.push({ name, platform, type, raw: aChallenge })
@@ -121,6 +126,6 @@ const setup = async () => {
   console.log()
   console.log(result)
 
-  await fs.writeFile(resolve(__dirname, 'README.md'), `${result.trim()}\n`)
+  await fs.writeFile(path.resolve(__dirname, 'README.md'), `${result.trim()}\n`)
 }
 setup()
