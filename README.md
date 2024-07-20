@@ -37,6 +37,8 @@ zx _genReadme.mjs
 | [`100289-minimum-substring-partition-of-equal-character-frequency`](./challenges/leetcode-100289-minimum-substring-partition-of-equal-character-frequency) | leetcode |
 | [`100299-check-if-grid-satisfies-conditions`](./challenges/leetcode-100299-check-if-grid-satisfies-conditions) | leetcode |
 | [`100302-maximum-points-inside-the-square`](./challenges/leetcode-100302-maximum-points-inside-the-square) | leetcode |
+| [`100330-minimum-length-of-string-after-operations`](./challenges/leetcode-100330-minimum-length-of-string-after-operations) | leetcode |
+| [`100375-find-the-winning-player-in-coin-game`](./challenges/leetcode-100375-find-the-winning-player-in-coin-game) | leetcode |
 | [`1d-spreadsheet`](./challenges/codingame-1d-spreadsheet) | codingame |
 | [`2481-minimum-cuts-to-divide-a-circle`](./challenges/leetcode-2481-minimum-cuts-to-divide-a-circle) | leetcode |
 | [`2482-difference-between-ones-and-zeros-in-row-and-column`](./challenges/leetcode-2482-difference-between-ones-and-zeros-in-row-and-column) | leetcode |
@@ -149,6 +151,8 @@ ___
 | [`100289-minimum-substring-partition-of-equal-character-frequency`](./challenges/leetcode-100289-minimum-substring-partition-of-equal-character-frequency) | Classic |
 | [`100299-check-if-grid-satisfies-conditions`](./challenges/leetcode-100299-check-if-grid-satisfies-conditions) | Classic |
 | [`100302-maximum-points-inside-the-square`](./challenges/leetcode-100302-maximum-points-inside-the-square) | Classic |
+| [`100330-minimum-length-of-string-after-operations`](./challenges/leetcode-100330-minimum-length-of-string-after-operations) | Classic |
+| [`100375-find-the-winning-player-in-coin-game`](./challenges/leetcode-100375-find-the-winning-player-in-coin-game) | Classic |
 | [`2481-minimum-cuts-to-divide-a-circle`](./challenges/leetcode-2481-minimum-cuts-to-divide-a-circle) | Classic |
 | [`2482-difference-between-ones-and-zeros-in-row-and-column`](./challenges/leetcode-2482-difference-between-ones-and-zeros-in-row-and-column) | Classic |
 | [`2483-minimum-penalty-for-a-shop`](./challenges/leetcode-2483-minimum-penalty-for-a-shop) | Classic |
@@ -186,6 +190,8 @@ ___
 | [`100289-minimum-substring-partition-of-equal-character-frequency`](./challenges/leetcode-100289-minimum-substring-partition-of-equal-character-frequency) | leetcode | Classic |
 | [`100299-check-if-grid-satisfies-conditions`](./challenges/leetcode-100299-check-if-grid-satisfies-conditions) | leetcode | Classic |
 | [`100302-maximum-points-inside-the-square`](./challenges/leetcode-100302-maximum-points-inside-the-square) | leetcode | Classic |
+| [`100330-minimum-length-of-string-after-operations`](./challenges/leetcode-100330-minimum-length-of-string-after-operations) | leetcode | Classic |
+| [`100375-find-the-winning-player-in-coin-game`](./challenges/leetcode-100375-find-the-winning-player-in-coin-game) | leetcode | Classic |
 | [`1d-spreadsheet`](./challenges/codingame-1d-spreadsheet) | codingame | Classic |
 | [`2481-minimum-cuts-to-divide-a-circle`](./challenges/leetcode-2481-minimum-cuts-to-divide-a-circle) | leetcode | Classic |
 | [`2482-difference-between-ones-and-zeros-in-row-and-column`](./challenges/leetcode-2482-difference-between-ones-and-zeros-in-row-and-column) | leetcode | Classic |
