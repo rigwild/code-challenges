@@ -1,6 +1,6 @@
-import { Vertex } from './types'
+export type Vertex = { id: number; links: number[] }
 
-export const dfs = (graph: Vertex[], source: Vertex) => {
+export function dfs(graph: Vertex[], source: Vertex) {
   const visited = graph.reduce<{ [id: number]: boolean }>((acc, cur) => ((acc[cur.id] = false), acc), {})
 
   const stack = []

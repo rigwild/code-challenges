@@ -1,9 +1,9 @@
 import PriorityQueue from './PriorityQueue'
-import { Vertex } from './types'
 
-export const dijkstra = (graph: Vertex[], source: Vertex) => {
+export type Vertex = { id: number; links: number[] }
+
+export function dijkstra(graph: Vertex[], source: Vertex) {
   // https://github.com/trekhleb/javascript-algorithms/blob/master/src/algorithms/graph/dijkstra/dijkstra.js
-
   const distances: { [id: number]: number } = {}
   const visited: { [id: number]: boolean } = {}
   const previous: { [id: number]: number | null } = {}

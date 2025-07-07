@@ -26,7 +26,7 @@ if (argv.leetcode) {
 }
 if (!url) throw new Error('URL is required')
 
-const templates = ['ts', 'ts-full', 'js', 'js-codegolf', 'js-leetcode']
+const templates = ['ts', 'ts-full', 'js', 'js-codegolf', 'js-leetcode', 'py-leetcode']
 let template = ''
 const argvTemplate = argv.template
 if (argvTemplate) {
@@ -35,7 +35,7 @@ if (argvTemplate) {
 }
 if (!template) {
   template =
-    (await question('Template to use (ts, ts-full, js, js-codegolf, js-leetcode) [js-leetcode]: ', {
+    (await question('Template to use (ts, ts-full, js, js-codegolf, js-leetcode, py-leetcode) [js-leetcode]: ', {
       choices: templates,
     })) || 'js-leetcode'
 }

@@ -18,6 +18,7 @@ This is a collection of some of my submissions to code challenges/contests.
 ```sh
 pnpm i
 zx _initChallenge.mjs
+zx _initChallenge.mjs --leetcode
 ```
 
 ## Generate README
@@ -47,6 +48,8 @@ zx _genReadme.mjs
 | [`2512-reward-top-k-students`](./challenges/leetcode-2512-reward-top-k-students) | leetcode |
 | [`2553-separate-the-digits-in-an-array`](./challenges/leetcode-2553-separate-the-digits-in-an-array) | leetcode |
 | [`2554-maximum-number-of-integers-to-choose-from-a-range-i`](./challenges/leetcode-2554-maximum-number-of-integers-to-choose-from-a-range-i) | leetcode |
+| [`3602-hexadecimal-and-hexatrigesimal-conversion`](./challenges/leetcode-3602-hexadecimal-and-hexatrigesimal-conversion) | leetcode |
+| [`3603-minimum-cost-path-with-alternating-directions-ii`](./challenges/leetcode-3603-minimum-cost-path-with-alternating-directions-ii) | leetcode |
 | [`6261-maximum-value-of-a-string-in-an-array`](./challenges/leetcode-6261-maximum-value-of-a-string-in-an-array) | leetcode |
 | [`6262-maximum-star-sum-of-a-graph`](./challenges/leetcode-6262-maximum-star-sum-of-a-graph) | leetcode |
 | [`6287-categorize-box-according-to-criteria`](./challenges/leetcode-6287-categorize-box-according-to-criteria) | leetcode |
@@ -160,6 +163,8 @@ ___
 | [`2512-reward-top-k-students`](./challenges/leetcode-2512-reward-top-k-students) | Classic |
 | [`2553-separate-the-digits-in-an-array`](./challenges/leetcode-2553-separate-the-digits-in-an-array) | Classic |
 | [`2554-maximum-number-of-integers-to-choose-from-a-range-i`](./challenges/leetcode-2554-maximum-number-of-integers-to-choose-from-a-range-i) | Classic |
+| [`3602-hexadecimal-and-hexatrigesimal-conversion`](./challenges/leetcode-3602-hexadecimal-and-hexatrigesimal-conversion) | Classic |
+| [`3603-minimum-cost-path-with-alternating-directions-ii`](./challenges/leetcode-3603-minimum-cost-path-with-alternating-directions-ii) | Classic |
 | [`6261-maximum-value-of-a-string-in-an-array`](./challenges/leetcode-6261-maximum-value-of-a-string-in-an-array) | Classic |
 | [`6262-maximum-star-sum-of-a-graph`](./challenges/leetcode-6262-maximum-star-sum-of-a-graph) | Classic |
 | [`6287-categorize-box-according-to-criteria`](./challenges/leetcode-6287-categorize-box-according-to-criteria) | Classic |
@@ -200,6 +205,8 @@ ___
 | [`2512-reward-top-k-students`](./challenges/leetcode-2512-reward-top-k-students) | leetcode | Classic |
 | [`2553-separate-the-digits-in-an-array`](./challenges/leetcode-2553-separate-the-digits-in-an-array) | leetcode | Classic |
 | [`2554-maximum-number-of-integers-to-choose-from-a-range-i`](./challenges/leetcode-2554-maximum-number-of-integers-to-choose-from-a-range-i) | leetcode | Classic |
+| [`3602-hexadecimal-and-hexatrigesimal-conversion`](./challenges/leetcode-3602-hexadecimal-and-hexatrigesimal-conversion) | leetcode | Classic |
+| [`3603-minimum-cost-path-with-alternating-directions-ii`](./challenges/leetcode-3603-minimum-cost-path-with-alternating-directions-ii) | leetcode | Classic |
 | [`6261-maximum-value-of-a-string-in-an-array`](./challenges/leetcode-6261-maximum-value-of-a-string-in-an-array) | leetcode | Classic |
 | [`6262-maximum-star-sum-of-a-graph`](./challenges/leetcode-6262-maximum-star-sum-of-a-graph) | leetcode | Classic |
 | [`6287-categorize-box-according-to-criteria`](./challenges/leetcode-6287-categorize-box-according-to-criteria) | leetcode | Classic |

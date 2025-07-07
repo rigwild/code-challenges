@@ -28,6 +28,7 @@ This is a collection of some of my submissions to code challenges/contests.
 \`\`\`sh
 pnpm i
 zx _initChallenge.mjs
+zx _initChallenge.mjs --leetcode
 \`\`\`
 
 ## Generate README
