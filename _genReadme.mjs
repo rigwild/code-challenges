@@ -39,40 +39,17 @@ zx _genReadme.mjs
 
 ## Challenges
 
-### Grouped by type
-${Object.entries(challengesByType)
-  .map(
-    ([type, challenges]) => `
-#### ${type}
-
-| Name | Platform |
-| ---- | -------- |
-${challenges.map(x => `| [\`${x.name}\`](./challenges/${x.raw}) | ${x.platform} |`).join('\n')}`
-  )
-  .join('\n')}
-
-___
-
-### Grouped by platform
 ${Object.entries(challengesByPlatform)
   .sort(([a], [b]) => a.localeCompare(b))
   .map(
     ([platform, challenges]) => `
-#### ${platform}
+### ${platform}
 
 | Name | Type |
 | ---- | ---- |
 ${challenges.map(x => `| [\`${x.name}\`](./challenges/${x.raw}) | ${x.type} |`).join('\n')}`
   )
   .join('\n')}
-
-___
-
-### All challenges
-
-| Name | Platform | Type |
-| ---- | -------- | ---- |
-${challenges.map(x => `| [\`${x.name}\`](./challenges/${x.raw}) | ${x.platform} | ${x.type} |`).join('\n')}
 
 ## License
 
@@ -95,7 +72,20 @@ TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
 
 const setup = async () => {
   const challengesPath = path.resolve(__dirname, 'challenges')
-  const challengesRaw = (await fs.readdir(challengesPath)).sort((a, b) => a.replace(/^.*?-/, '').localeCompare(b.replace(/^.*?-/, '')))
+  const extractNumber = filename => {
+    // Handles cases like "leetcode-100289-minimum-substring-partition-of-equal-character-frequency"
+    // Grabs the first sequence of digits after the platform
+    const match = filename.match(/^[^-]+-(\d+)/)
+    return match ? Number(match[1]) : Infinity
+  }
+
+  const challengesRaw = (await fs.readdir(challengesPath)).sort((a, b) => {
+    const numA = extractNumber(a)
+    const numB = extractNumber(b)
+    // fallback to string comparison if no number
+    if (numA !== numB) return numA - numB
+    return a.localeCompare(b)
+  })
 
   let challenges = []
 
