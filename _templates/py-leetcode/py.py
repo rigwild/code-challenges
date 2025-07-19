@@ -2,6 +2,7 @@ from typing import List, cast
 import math
 import itertools
 import functools
+from collections import deque
 
 
 class Solution:
